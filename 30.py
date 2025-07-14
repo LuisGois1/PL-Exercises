@@ -13,7 +13,6 @@ while True:
         quantidade += 1
         if quantidade == 0:
             print("\nNenhuma nota foi inserida. Média não pode ser calculada.")
-        else:
-         media = soma_notas / quantidade
-         print(f"\nForam inseridas {quantidade} notas.")
-         print(f"Média das notas: {media:.2f}")
+media = soma_notas / quantidade
+print(f"\nForam inseridas {quantidade} notas.")
+print(f"Média das notas: {media:.2f}") 
