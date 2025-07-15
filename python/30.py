@@ -11,8 +11,9 @@ while True:
             break
         soma_notas += entrada
         quantidade += 1
-        if quantidade == 0:
-            print("\nNenhuma nota foi inserida. Média não pode ser calculada.")
-media = soma_notas / quantidade
-print(f"\nForam inseridas {quantidade} notas.")
-print(f"Média das notas: {media:.2f}") 
+if quantidade != 0:        
+    media = soma_notas / quantidade
+    print(f"\nForam inseridas {quantidade} notas.")
+    print(f"Média das notas: {media:.2f}") 
+else:
+    print("\nNenhuma nota foi inserida! Média não pode ser calculada.")
